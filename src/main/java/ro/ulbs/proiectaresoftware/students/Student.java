@@ -31,4 +31,9 @@ public class Student {
     public String toString(){
         return String.format("%d                 %s      %s    %s",numarMatricol,prenume,nume,formatieDeStudiu);
     }
+    public boolean compare(Student s1 )
+    {
+        if((s1.numarMatricol==numarMatricol) && (s1.nume.equals(nume)) &&s1.prenume.equals(prenume) && s1.formatieDeStudiu.equals(formatieDeStudiu)) return true;
+    return false;
+    }
 }
